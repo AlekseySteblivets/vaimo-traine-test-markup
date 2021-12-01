@@ -1,0 +1,38 @@
+.header-form-section {
+  position: relative;
+  display: none;
+  background: #f7f7f7;
+  opacity: 0.24;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+@media (min-width: 1440px) {
+  .header-form-section {
+    display: inline-flex;
+  }
+}
+.header-input {
+  display: inline-block;
+  width: 584px;
+  height: 48px;
+}
+
+.input-icon-svg {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  fill: blue;
+}
+
+.but-icon-register {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .but-icon-register {
+    display: inline-flex;
+    margin-left: 254px;
+  }
+}

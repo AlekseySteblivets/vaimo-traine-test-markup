@@ -1,0 +1,35 @@
+.under-header {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .under-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+.under-header-text {
+  //   padding: 0;
+  margin-top: 4px;
+  margin-bottom: 3px;
+  margin-left: 653px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.45;
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+
+.icon-location {
+  margin-left: 562px;
+}
+
+.our-stores {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: right;
+  letter-spacing: 0.0833333px;
+}

@@ -1,0 +1,116 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  //   position: relative;
+  outline: 1px solid tomato;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 1440px) {
+  .navigation {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  height: 72px;
+  outline: 1px solid tomato;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: brown;
+  //   position: absolute;
+}
+@media (min-width: 1440px) {
+  .header {
+    width: 1440px;
+    height: 164px;
+  }
+}
+.burger-menu-block {
+  margin-right: 62px;
+}
+
+.full-basket-menu-block {
+  display: block;
+  margin-left: 66px;
+}
+@media (min-width: 1440px) {
+  .full-basket-menu-block {
+    margin-left: 0px;
+  }
+}
+
+.navigation__but-mobile {
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  margin-right: 16px;
+  /* width: 20px;
+  height: 20px; */
+  /* background-image: "../images/mobile/menu-burger.svg"; */
+}
+@media (min-width: 1440px) {
+  .navigation__but-mobile {
+    display: none;
+  }
+}
+
+.navigation__but-mobile-search {
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  margin-right: 58px;
+}
+@media (min-width: 1440px) {
+  .navigation__but-mobile-search {
+    display: none;
+  }
+  .logo {
+    margin-right: 263px;
+    // width: 141px;
+    // height: 57px;
+  }
+}
+
+.but-nav-mobile {
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  /* width: 20px;
+  height: 20px; */
+  /* background-image: "../images/mobile/menu-burger.svg"; */
+}
+
+.but-icon-mobile {
+  fill: royalblue;
+}
+@media (min-width: 1440px) {
+  .but-icon-mobile {
+    margin-left: 16px;
+  }
+}
+
+.header__inner {
+  outline: 1px solid tomato;
+  margin-top: 16px;
+}
+@media (min-width: 1440px) {
+  .header__inner {
+    margin-top: 0px;
+  }
+}
+
+.menu {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .menu {
+    display: inline-flex;
+  }
+}
