@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-direction: column;
   //   position: relative;
   outline: 1px solid tomato;
   padding-left: 16px;
@@ -76,6 +77,9 @@
     // width: 141px;
     // height: 57px;
   }
+  .icon-logo-mobile {
+    display: none;
+  }
 }
 
 .but-nav-mobile {
@@ -103,6 +107,7 @@
 @media (min-width: 1440px) {
   .header__inner {
     margin-top: 0px;
+    padding-top: 16px;
   }
 }
 
@@ -112,5 +117,21 @@
 @media (min-width: 1440px) {
   .menu {
     display: inline-flex;
+  }
+}
+
+.logo-text-desktop {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .logo-text-desktop {
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1.5;
+    letter-spacing: 0.95px;
+    margin: 0;
+    padding: 0;
+    width: 141px;
   }
 }

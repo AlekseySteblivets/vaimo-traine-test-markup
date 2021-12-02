@@ -61,6 +61,10 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   outline: 1px solid tomato;
   padding-left: 16px;
   padding-right: 16px;
@@ -143,6 +147,9 @@ img {
   .logo {
     margin-right: 263px;
   }
+  .icon-logo-mobile {
+    display: none;
+  }
 }
 
 .but-nav-mobile {
@@ -172,6 +179,7 @@ img {
 @media (min-width: 1440px) {
   .header__inner {
     margin-top: 0px;
+    padding-top: 16px;
   }
 }
 
@@ -184,6 +192,25 @@ img {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+  }
+}
+
+.logo-text-desktop {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .logo-text-desktop {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1.5;
+    letter-spacing: 0.95px;
+    margin: 0;
+    padding: 0;
+    width: 141px;
   }
 }
 
@@ -228,7 +255,7 @@ img {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    margin-left: 254px;
+    margin-left: 238px;
   }
 }
 
@@ -272,5 +299,36 @@ img {
   line-height: 1.5;
   text-align: right;
   letter-spacing: 0.0833333px;
+}
+
+.link-navigation {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.navigation-up-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.menu-link {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.46;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
