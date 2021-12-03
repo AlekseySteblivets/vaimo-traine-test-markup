@@ -2,6 +2,7 @@
 /* для  стилей  общего пользования */
 body {
   font-family: 'Poppins';
+  font-style: normal;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.872727px;
@@ -14,12 +15,12 @@ body {
 ::after,
 ::before {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .list {
@@ -55,13 +56,11 @@ img {
   position: relative;
   margin: 0 auto;
   width: 360px;
-  height: 72px;
 }
 
 @media (min-width: 1440px) {
   .for-posision-relative {
     width: 1440px;
-    height: 164px;
   }
 }
 
@@ -70,15 +69,15 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   outline: 1px solid tomato;
   padding-left: 16px;
   padding-right: 16px;
@@ -106,25 +105,13 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(14.31%, rgba(51, 51, 51, 0.9)),
-    color-stop(58.6%, rgba(27, 27, 27, 0.469176)),
-    to(rgba(0, 0, 0, 0.0001))
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(51, 51, 51, 0.9) 14.31%,
-    rgba(27, 27, 27, 0.469176) 58.6%,
-    rgba(0, 0, 0, 0.0001) 100%
-  );
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(14.31%, rgba(51, 51, 51, 0.9)), color-stop(58.6%, rgba(27, 27, 27, 0.469176)), to(rgba(0, 0, 0, 0.0001)));
+  background: linear-gradient(180deg, rgba(51, 51, 51, 0.9) 14.31%, rgba(27, 27, 27, 0.469176) 58.6%, rgba(0, 0, 0, 0.0001) 100%);
 }
 
 @media (min-width: 1440px) {
@@ -301,11 +288,11 @@ img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #ffffff;
   }
 }
@@ -347,8 +334,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-item:not(:last-child) {
@@ -371,7 +358,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('../../images/mobile/hero-foto.jpg');
+  background-image: url("../../images/mobile/hero-foto.jpg");
   height: 480px;
   max-width: 360px;
   width: 100%;
@@ -379,7 +366,7 @@ img {
 
 @media screen and (min-width: 1440px) {
   .bg-hero {
-    background-image: url('../../images/hero-desktop.jpg');
+    background-image: url("../../images/hero-desktop.jpg");
     max-width: 1440px;
     height: 657px;
   }
@@ -410,5 +397,90 @@ img {
   line-height: 1.5;
   text-align: center;
   color: #ffffff;
+}
+
+.registration-text {
+  display: block;
+  margin: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 24px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.872727px;
+}
+
+@media (min-width: 1440px) {
+  .registration-text {
+    width: 439px;
+  }
+}
+
+.registration-input {
+  padding: 0;
+  margin-right: 8px;
+  width: 224px;
+  height: 32px;
+  border: 1px solid #e1e0e1;
+  border-radius: 3px;
+}
+
+@media (min-width: 1440px) {
+  .registration-input {
+    width: 334px;
+    margin: 0;
+    margin-right: 12px;
+  }
+}
+
+.btn-register {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 3px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+
+@media (min-width: 1440px) {
+  .btn-register {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.registration-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration-form {
+  margin-top: 14px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1440px) {
+  .registration-form {
+    margin-bottom: 32px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
